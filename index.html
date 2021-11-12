@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div>
+            <img src="./assests/img/logo.png" alt="logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="./assests/img/img_1.jpg" class="home_page_img">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="./assests/img/img_2.jpg" class="home_page_img">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="./assests/img/img_3.jpg" class="home_page_img">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="./assests/img/img_4.jpg" class="home_page_img">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="./assests/img/img_5.jpg" class="home_page_img">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script src="./assests/index.js"></script>
+</body>
+
+</html>
