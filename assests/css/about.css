@@ -1,0 +1,155 @@
+.details {
+    margin: 60px 70px 0 70px;
+}
+
+.details .heading {
+    font-size: 40px;
+    margin: 0 25% 30px 25%;
+}
+
+
+.team-container {
+    width: 100vw;
+    text-align: center;
+}
+
+.team-helper {
+    display: inline-block;
+    width: 100vw;
+}
+
+.flex-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.head-team {
+    flex-basis: 100%;
+    margin: 80px auto 10px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+}
+
+.head-team h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 28px;
+}
+
+.french {
+    flex-basis: 100%;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.baseline {
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    margin-top: 15px;
+    background-color: #4d8cf5;
+}
+
+.flex-team1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.teamimg {
+    margin: 0;
+    flex-basis: 21%;
+}
+
+.teamimg img {
+    max-width: 100%;
+}
+
+.teamimg .p-bold {
+    font-weight: 1000;
+    color: black;
+}
+
+.teamimg p {
+    margin: 10px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    color: #5c5c5c;
+}
+
+.teamimg img:hover {
+    background-color: #4d8cf5;
+
+}
+
+.layer .fab {
+    max-width: 0;
+    max-height: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: max-height 0.8s;
+}
+
+.image-team {
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(77, 140, 245, .8);
+    position: absolute;
+    top: 0;
+    border-bottom: 2px solid rgba(4, 39, 100, 0.8);
+    max-height: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-team img {
+    width: 100%;
+}
+
+.image-team:hover .layer {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.image-team:hover .layer .fab {
+    max-height: 100px;
+    font-size: 30px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.image-team:hover .layer .fab:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+    .flex-team1 {
+        column-gap: 25px;
+    }
+
+    .teamimg {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .teamimg {
+        flex-basis: 90%;
+    }
+
+}
