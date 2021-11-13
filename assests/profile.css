@@ -1,0 +1,25 @@
+.profile-data {
+    margin-top: 100px;
+    margin-left:150px;
+    margin-right:150px ;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.profile-data .sections ul li{
+    list-style-type: none;
+    padding: 20px;
+    border: 0.2px solid gray;
+    cursor: pointer;
+}
+
+.profile-data .sections ul li:hover{
+    color: brown;
+    background-color: rgb(230, 228, 228);
+}
+
+.profile-data .results {
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
