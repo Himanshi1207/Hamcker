@@ -66,7 +66,7 @@
     background-color: rgb(182, 182, 182);
 }
 
-.contact-data #speak-message {
+.contact-data .send-messages button {
     width: 30px;
     font-size: 20px;
     border: none;
@@ -74,6 +74,6 @@
     cursor: pointer;
 }
 
-.contact-data #speak-message:hover {
+.contact-data .send-messages button:hover {
     color: rgb(192, 190, 190);
 }
