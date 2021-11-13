@@ -8,6 +8,10 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav-bar {
     display: flex;
 }
@@ -37,6 +41,20 @@ body {
     text-decoration: none;
 }
 
+.nav-bar .nav-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar .nav-profile a{
+    color: black;
+    margin-left: 400px;
+}
+
+.nav-bar .nav-profile a:hover {
+    color: rgb(73, 73, 170);
+}
 .nav-bar li a:hover {
     background-color:aliceblue;
 }
