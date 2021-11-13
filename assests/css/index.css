@@ -240,3 +240,115 @@ img {
 .fa-arrow-right{
     font-size: 14px;
 }
+
+.footer-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #282828;
+    color: #908F8F;
+    margin-top: 100px;
+}
+
+.footer-about{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-basis: 90%;
+}
+
+.parent-footer{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-heading{
+    flex-basis: 80%;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    color: white;
+}
+
+.about-comp{
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+
+.about-comp .about{
+    flex-basis: 80%;
+    align-self: flex-start;
+}
+
+.connection-icons{
+    margin-top: 25px;
+    flex-basis: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.connection-icons .icons-footer{
+    flex-basis: 80%;
+}
+
+.contact-info-footer{
+    margin-top: 25px;
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.contact-info-footer .connect-icons-footer{
+    flex-basis: 80%;
+}
+
+.icons-footer-1{
+    color: white;
+    font-weight: 700;
+}
+
+.line-end{
+    flex-basis: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.line-end hr{
+    height: 3px;
+    background-color: #34a0fd;
+}
+
+.icons-footer i{
+    color: white;
+}
+
+/* .connect-icons-footer a{
+    color: white;
+} */
+
+.end-footer{
+    margin-bottom: 30px;
+}
+
+#nsutian-footer{
+    color: red;
+    font-weight: 600;
+}
+
+.quick-link-a{
+    color: #928989;
+}
