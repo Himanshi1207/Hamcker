@@ -2,7 +2,7 @@
 
 # Introduction
 
-AS the village women have very less knowledge of technology  so we tried to keep the interface simple to understand
+As the village women have very less knowledge of technology  so we tried to keep the interface simple to understand
 and we also used hindi language for their better understanding to deal with language barrier.
 
 # Description
@@ -15,7 +15,7 @@ In **Contact page** we used a voice and text chatbot to deal effectively with la
 <br><br>
 <img src="./assests/img/ReadMe/contact.png">
 
-And **About Us** page contains information about taem members who took this social initiative.
+And **About Us** page contains information about team members who took this social initiative.
 <br><br>
 <img src="./assests/img/ReadMe/about.png">
 
