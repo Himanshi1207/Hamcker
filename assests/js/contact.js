@@ -25,6 +25,7 @@ document.getElementById("speak-message").addEventListener("click", () => {
     reco.onresult = (e) => {
         document.getElementById("conversation-messages").innerHTML +=
             `<div class="sender-message">You : ${e.results[0][0].transcript}</div>`
+        message_reply(e.results[0][0].transcript)
     }
     reco.start()
 })
@@ -43,6 +44,10 @@ function enter_message_of_sender() {
     var message = document.getElementById("message-input").value
     document.getElementById("conversation-messages").innerHTML +=
         `<div class="sender-message">You : ${message}</div>`
+    message_reply(message)
+}
+
+function message_reply(message) {
     if (message === "hi" || message === "hello") {
         document.getElementById("conversation-messages").innerHTML +=
             `<div class="expert-message">Expert : Hello there how may i help you</div>`
@@ -61,12 +66,12 @@ function enter_message_of_sender() {
         document.getElementById("conversation-messages").innerHTML +=
             `<div class="expert-message">Expert : If you want to sell your products then you can go to <br>profile and login with required details and then you can upload<br> the images and other details for it</div>`
     }
-    if (message.includes("पैसे")||message.includes("पैसा")||message.includes("निकालना")||message.includes("निकालने")) {
+    if (message.includes("पैसे") || message.includes("पैसा") || message.includes("निकालना") || message.includes("निकालने")) {
         speakTextHindi("यदि आप बेचे गए उत्पादों के पैसे निकालना चाहते हैं तो आप प्रोफ़ाइल के लेखा अनुभाग में जा सकते हैं, वहां एक निकासी विकल्प उपलब्ध होगा जिससे आप राशि निकाल सकते हैं")
         document.getElementById("conversation-messages").innerHTML +=
             `<div class="expert-message">विशेषज्ञ : यदि आप बेचे गए उत्पादों के पैसे निकालना चाहते हैं तो आप प्रोफ़ाइल के लेखा <br>अनुभाग में जा सकते हैं, वहां एक निकासी विकल्प उपलब्ध होगा जिससे आप राशि <br>निकाल सकते हैं</div>`
     }
-    if (message.includes("money")||message.includes("cash")||message.includes("withdraw")) {
+    if (message.includes("money") || message.includes("cash") || message.includes("withdraw")) {
         document.getElementById("conversation-messages").innerHTML +=
             `<div class="expert-message">Expert : If you want to withdraw money of the products sold<br> you can go to the accounts section of the profile , a withdraw<br> option wil be available there form which you can withdraw<br> the amountt</div>`
     }

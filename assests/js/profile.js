@@ -71,6 +71,42 @@ document.getElementById('orders_').addEventListener('click', () => {
     document.getElementById('details-cont').style.display = "flex";
 })
 
+document.getElementById('sell__').addEventListener('click', () => {
+    if (document.getElementById('details-cont').style.display == 'flex')
+        document.getElementById('details-cont').style.display == 'none';
+    document.getElementById('main-det-cont').innerHTML =
+        `
+        <div id="selling_content">
+                    <label>Name of Product </label>
+                    <input type="text" />
+                    <label>Details of Product</label>
+                    <input type="text" />
+                    <label>Category</label>
+                    <input type="text" />
+                    <label>Price Range</label>
+                    <input type="number" />
+                    <label>Product Images</label>
+                    <input type="file" id="image_input">
+                    <div id="display_image"></div>
+        </div>
+`;
+    document.getElementById('details-cont').style.display = "flex";
+    const image_input = document.getElementById("image_input");
+    var uploaded_image;
+
+    image_input.addEventListener('change', function () {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => {
+            uploaded_image = reader.result;
+            document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
+        });
+        reader.readAsDataURL(this.files[0]);
+    });
+})
+
+
+
+
 document.getElementById('acc-details').addEventListener('click', () => {
     if (document.getElementById('details-cont').style.display == 'flex')
         document.getElementById('details-cont').style.display == 'none';

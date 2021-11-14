@@ -25,12 +25,12 @@ root{
     position:fixed;
     top: 0%;
     width: 100%;
-    background-color: rgb(58, 57, 57); 
+    background-color: rgb(90, 89, 89); 
 
     margin: auto;
 }
 .nav-bar-link:hover{
-    color: rgb(74, 74, 247);
+    color: rgb(135, 135, 243);
 }
 
 .sections{
