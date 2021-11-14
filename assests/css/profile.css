@@ -261,6 +261,16 @@ root{
 }
 
 
+#sepakinstruction {
+    margin-top: 40px;
+    margin-left: 90vw;
+    font-size: 40px;
+    cursor: pointer;
+}
+#sepakinstruction:hover {
+    color: rgb(223, 222, 222);
+}
+
 .front1{
     background-image: linear-gradient(
     180deg, #14131399, rgba(31, 13, 13, 0.7)), url("../img/kelly-sikkema-Rq1MLxP5RgI-unsplash.jpg");

@@ -16,6 +16,11 @@ let branchname = sessionStorage.getItem('branchname');
 let ifsc = sessionStorage.getItem('ifsc');
 let accnum = sessionStorage.getItem('accnum');
 
+document.getElementById("sepakinstruction").addEventListener("click", () => {
+    const text = "यदि आप एक विक्रेता हैं तो कृपया विक्रेता फॉर्म भरें या यदि आप एक खरीदार हैं तो कृपया खरीदार पंजीकरण फॉर्म भरें आप पिछले आदेशों की जांच कर सकते हैं और खाता विवरण अनुभाग में आप अपने द्वारा बेचे गए सामान की राशि निकाल सकते हैं"
+    responsiveVoice.speak(text, "Hindi Female");
+})
+
 
 $('input').focus(function (event) {
     $(this).closest('.float-label-field').addClass('float').addClass('focus');
