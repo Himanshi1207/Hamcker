@@ -5,47 +5,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/css/index.css">
+    <link rel="stylesheet" href="./assests/index.css">
     <link rel="stylesheet" href="./assests/css/profile.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-
-    <div class="nav-bar">
-        <div>
-            <img src="./assests/img/logo.png" alt="logo" class="logo">
+    <nav>
+        <div class="nav-bar">
+            <div class="krunch-logo">
+                Handicraft
+            </div>
+            <div class="sections">
+                <a href="./index.html" class="nav-bar-link">Home/घर</a>
+                <a href="./contact.html" class="nav-bar-link">Contact/संपर्क</a>
+                <a href="./about.html" class="nav-bar-link">About Us/परिचय</a>
+            </div>
         </div>
-        <ul>
-            <li><a href="./index.html">Home / घर</a></li>
-            <li><a href="./contact.html">Contact / संपर्क</a></li>
-            <li><a href="./about.html">About /  बारे में</a></li>
-        </ul>
-        <div class="nav-profile">
-            <a href="profile.html">Profile / प्रोफ़ाइल<i class="fas fa-user"></i></a>
+    </nav>
+    <main>
+        <div class="front1" id="front">
+            <div class="trans">
+                <h1 class=" heading ">We Rise by Lifting Others</h1>
+                <p class="para1">We provide simple platform for selling products <br> which can be accessed by any
+                    customer around the
+                    globe
+                </p>
+                <p class="para2">Are you seller or buyer</p>
+                <div class="button_">
+                    <button class="button1" id="seller_">Seller</button>
+                    <button class="button2" id="buyer_">Buyer</button>
+                </div>
+                <p class="para1">If clicked then goto bottom of page to fill form</p>
+            </div>
         </div>
-    </div>
 
-    <div class="profile-data">
-        <div class="sections">
-            <ul>
-                <li class="section-list">Dashbord</li>
-                <li class="section-list">Details</li>
-                <li class="section-list">Orders</li>
-                <li class="section-list">Sell</li>
-                <li class="section-list">Account Details</li>
-            </ul>
+        <div class="profile-data">
+            <div class="sections">
+                <ul>
+                    <li class="section-list" id="details_">Details</li>
+                    <li class="section-list" id="orders_">Orders</li>
+                    <li class="section-list" id="sell__">Sell</li>
+                    <li class="section-list" id="acc-details">Account Details</li>
+                </ul>
+            </div>
+            <div class="results">
+                <div id="username"></div>
+
+                <div class="result-child1"> From your account <em>details</em> you can view your recent orders, manage
+                    your
+                    shipping and billing addresses and
+                    edit your password and account details.</div>
+                <div class="result-child1"> click on <em>orders</em> button to view your orders</div>
+                <div class="result-child1"> click on <em>Account details</em> button to view your account details</div>
+            </div>
         </div>
-        <div class="results">
-            Hello User,
-            <br><br>
 
-            From your account dashboard you can view your recent orders, manage your shipping and billing addresses and edit your password and account details.
+        <section id="details-cont">
+            <div id="main-det-cont">
+
+            </div>
+        </section>
+
+        <section id="artist-reg1">
+            <div class="modern-form">
+                <h3>Artist Registration form</h3>
+
+                <fieldset class='float-label-field'>
+                    <label for="txtName">Name</label>
+                    <input id="txtName" type='text'>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="Address21">Address Line1</label>
+                    <input id="Address21" type='text'>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="Address22">Address Line2</label>
+                    <input id="Address22" type='text'>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="town">Town/City</label>
+                    <input id="town" type='text'>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="state">State</label>
+                    <input id="state" type='text'>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="pincode">Pincode</label>
+                    <input id="pincode" type='number'>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="txtEmail">Email</label>
+                    <input id="txtEmail" type='email'>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="txtEmail22">Alternative Email</label>
+                    <input id="txtEmail22" type='email'>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="number">Mobile Number</label>
+                    <input id="number" type='number'>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="website">Website(optional)</label>
+                    <input id="website" type='text'>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label id="file-sample" for="sample">Upload a sample</label>
+                    <input id="sample" class="custom-file-input" type='file'>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <input type='checkbox' id="checkbx1">
+                    <label for="checkbx1" id="checkbox-label"> I agree to <a href="" class="label-atag">terms of
+                            services</a></label>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <input type="submit2" id="art-submit">
+                </fieldset>
+            </div>
+        </section>
+        <section id="buy-reg1">
+            <div class="modern-form" required>
+                <h3>Buyer Registration form</h3>
+
+                <fieldset class='float-label-field'>
+                    <label for="txtName1">FullName</label>
+                    <input id="txtName1" type='text' required>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="Address1">Address Line1</label>
+                    <input id="Address1" type='text' required>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="Address2">Address Line2</label>
+                    <input id="Address2" type='text'>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="town1">Town/City</label>
+                    <input id="town1" type='text' required>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="state1">State</label>
+                    <input id="state1" type='text' required>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="Pincode1">PinCode</label>
+                    <input id="Pincode1" type='text' required>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="bankName">Bank Name</label>
+                    <input id="bankName" type='text' required>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="branchName">Branch Name</label>
+                    <input id="branchName" type='text' required>
+                </fieldset>
+                <fieldset class='float-label-field'>
+                    <label for="ifscCode">Ifsc Code</label>
+                    <input id="ifscCode" type='number' required>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="Account-num">Account Number</label>
+                    <input id="Account-num" type='number' required>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="txtEmail2">Email</label>
+                    <input id="txtEmail2" type='email' required>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <label for="number2">Mobile Number</label>
+                    <input id="number2" type='number' required>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <input type='checkbox' id="checkbx">
+                    <label for="checkbx" id="checkbox-label"> I agree to <a href="" class="label-atag">terms of
+                            services</a></label>
+                </fieldset>
+
+                <fieldset class='float-label-field'>
+                    <input type="submit" id="art-submit">
+                </fieldset>
+            </div>
+        </section>
+        <div class="footer-cont">
+            <div class="parent-footer">
+                <div class="footer-heading">HandiCraft</div>
+                <div class="about-comp">
+                    <div class="footer-about">
+                        About Us
+                    </div>
+                    <div class="about">
+                        We provide simple platform for selling products which can be accessed by any customer around the
+                        globe
+                        <br><br>
+                        हम उत्पादों को बेचने के लिए सरल मंच प्रदान करते हैं जिसे दुनिया भर में किसी भी ग्राहक द्वारा
+                        एक्सेस
+                        किया जा सकता है
+                    </div>
+                </div>
+                <div class="connection-icons">
+                    <div class="icons-footer icons-footer-1">Connect with Us</div>
+                    <div class="icons-footer"><i class="fab fa-twitter-square"></i> &nbsp; &nbsp; Follow Us on Twitter
+                    </div>
+                    <div class="icons-footer"><i class="fab fa-facebook-square"></i>&nbsp; &nbsp; Like Us on Facebook
+                    </div>
+                    <div class="icons-footer"><i class="fab fa-instagram-square"></i>&nbsp; &nbsp; Follow Us on &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Instagram</div>
+                    <div class="icons-footer"><i class="fab fa-youtube-square"></i> &nbsp; &nbsp;Subscribe Us on &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; YouTube</div>
+                </div>
+                <div class="contact-info-footer">
+                    <div class="connect-icons-footer"><i class="fa-solid fa-house-blank"></i> <a class="quick-link-a"
+                            href="./index.html">Visit
+                            Home Page</a></div>
+                    <div class="connect-icons-footer"><i class="fa-solid fa-magnifying-glass-user"></i> <a
+                            class="quick-link-a" href="./contact.html">Contact Us</a>
+                    </div>
+                    <div class="connect-icons-footer"><i class="fa-solid fa-mobile-notch"></i> Call Us on 110-1234-124
+                    </div>
+                    <div class="connect-icons-footer"><i class="fa-solid fa-circle-envelope"></i>E-mail at
+                        handicraft@gmail.com</div>
+                </div>
+                <div class="line-end">
+                    <hr>
+                </div>
+                <div class="copyright-footer">
+                    <div class="end-footer">© 2021 HandiCraft pvt ltd. All Rights Reserved | Design by <span
+                            id="nsutian-footer">NSUTians</span></div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <script src="./assests/js/index.js"></script>
+        <script src="./assests/index.js"></script>
+        <script src="./assests/js/profile.js"></script>
 </body>
 
 </html>

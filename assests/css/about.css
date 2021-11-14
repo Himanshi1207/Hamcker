@@ -1,5 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .details {
-    margin: 60px 70px 0 70px;
+    margin: 100px 70px 0 70px;
+}
+
+body{
+    background-color: beige;
 }
 
 .details .heading {
@@ -152,4 +162,50 @@
         flex-basis: 90%;
     }
 
+}
+
+a{
+    text-decoration: none;
+}
+root{
+    --nav_bar_background: rgba(61, 61, 61,0.8); 
+}
+
+.nav-bar{
+    z-index: 9999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position:fixed;
+    top: 0%;
+    width: 100%;
+    background-color: rgb(58, 57, 57); 
+
+    margin: auto;
+}
+.nav-bar-link:hover{
+    color: rgb(74, 74, 247);
+}
+
+.sections{
+    padding-right: 60px;
+}
+.sections>a{
+    padding-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+.krunch-logo{
+    width: 100px;
+    color: white;
+    font-family: serif;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+#nav-profile a{
+    color: white;
 }

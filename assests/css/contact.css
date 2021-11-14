@@ -1,9 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .contact-data {
     height: 80vh;
     width: 80vw;
     border: 0.3px solid gray;
     margin-left: 10vw;
-    margin-top: 10vh;
+    margin-top: 15vh;
     border-radius: 4px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -13,7 +19,7 @@
     font-size: 30px;
     margin-left: 30vw;
     margin-top: 2vh;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-data .contact-heading button {
@@ -51,13 +57,16 @@
 
 .contact-data #message-input {
     width: 38vh;
+    border-radius: 10px;
 }
 
 .contact-data #start-conversation {
     height: 40px;
     width: 120px;
     font-size: 15px;
-    border: none;
+    margin-left: 6px;
+    border: 2px solid #999;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -76,4 +85,50 @@
 
 .contact-data .send-messages button:hover {
     color: rgb(192, 190, 190);
+}
+
+a{
+    text-decoration: none;
+}
+root{
+    --nav_bar_background: rgba(61, 61, 61,0.8); 
+}
+
+.nav-bar{
+    z-index: 9999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position:fixed;
+    top: 0%;
+    width: 100%;
+    background-color: rgb(58, 57, 57); 
+
+    margin: auto;
+}
+.nav-bar-link:hover{
+    color: rgb(74, 74, 247);
+}
+
+.sections{
+    padding-right: 60px;
+}
+.sections>a{
+    padding-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+.krunch-logo{
+    width: 100px;
+    color: white;
+    font-family: serif;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+#nav-profile a{
+    color: white;
 }
